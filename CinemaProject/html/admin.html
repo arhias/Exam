@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адмін Панель</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Адмін Панель</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="admin.html">Адмін Панель</a>
+        </nav>
+    </header>
+
+    <section id="adminSection">
+        <h2>Управління фільмами</h2>
+        <form id="addMovieForm">
+            <input type="text" id="movieTitle" placeholder="Назва фільму" required>
+            <textarea id="movieDescription" placeholder="Опис фільму" required></textarea>
+            <input type="text" id="movieGenre" placeholder="Жанр" required>
+            <input type="text" id="movieCast" placeholder="Акторський склад" required>
+            <input type="text" id="movieTrailer" placeholder="URL трейлера" required>
+            <input type="text" id="movieImage" placeholder="URL зображення" required>
+            <button type="submit">Додати фільм</button>
+        </form>
+        
+        <div id="adminMovieList"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Кінотеатр "Твій Фільм"</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
